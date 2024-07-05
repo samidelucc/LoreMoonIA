@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Markazi+Text:wght@400..700&display=swap');
+
+@font-face {
+    font-family: masterofbreak;
+    src: url('/fonts/master\ of\ break.ttf');
+}
+@font-face {
+    font-family: consola;
+    src: url('/fonts/CONSOLA.TTF');
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #bef2ff;
+}
+::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-color: #3aa3bd;
+}
+
+:root {  /* evitar repetição de códigos de cores*/
+    --cor-1: #000000;
+    --cor-2: #F6F6F6;
+    --cor-3: #753ca3;
+    --cor-4: #463d4e;
+}
+
+/* #FA7070 rosa chiclete */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*viewport height = altura*/
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f6f6f6;
+}
+
+.cabecalho {
+    padding: 1% 0 1% 15%;  /* 1-superior; 2-direito; 3-inferior; 4-esquerdo*/
+    border-bottom: 1px solid #753ca3;
+}
+
+.cabecalho_menu {
+    display: flex; /*sempre é jogado no elemento pai*/
+    gap:80px;
+}
+
+.cabecalho_menu_link {
+    color: #f6f6f6;
+    font-family: consola;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.cabecalho_menu_link:hover {
+    color: #463d4e;
+}
+
+.apres {
+    /* margin:10% 15%; */
+    padding: 5% 10%; 
+    display: flex;     /*direção de linha*/
+    align-items: center;    /* alinhar os elementos no centro */
+    justify-content: space-between;
+
+}
+
+.apres_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;  /* espaçamento do conteúdo */
+
+}
+
+.apres_conteudo_titulo {
+    font-family: masterofbreak;
+    font-size: 68px;
+    text-align: center;
+    color: #4a1096c2;
+    transition: all 1s;
+}
+
+.apres_conteudo_titulo:hover {
+    opacity: 0.7;
+}
+
+.apres_conteudo_texto1 {
+    font-family: consola;
+    text-align: center;
+    font-size: 24px;
+    color: #3aa3bd;
+    transition: all 1s;
+}
+
+.apres_conteudo_texto1:hover {
+    opacity: 0.5;
+}
+
+/*classe class h1*/
+/* .destaque_h1 {
+    color: #4a1096c2;
+} */
+
+.apres_conteudo_texto {
+    font-size: 28px;
+    font-family: "Markazi Text", serif;
+    text-align: justify;
+}
+
+strong {
+    color: #753ca3;
+    transition: all 1s;
+}
+
+strong:hover {
+    color: #3aa3bd;
+}
+
+b {
+    /* font-family: consola; */
+    color: #753ca3;
+
+}
+
+.index_coment {
+    font-size: 21px;
+    text-align: justify;
+}
+
+/* div */
+.apres_links {
+    display: flex;  /* por padrão é feito em linha horizontal, lado a lado */
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 5px; */
+    align-items: center;
+    gap: 32px; /* adiciona espaços iguais */
+}
+
+.apres_link_h2 {
+    font-family: consola;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.apres_link {
+    /* background-color: #A571EB; */
+    display: flex; /* icons */
+    justify-content: center; /* posicionamento do texto e dos icons */
+    gap: 16px; /* distancia entre o icon e o text */
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #753ca3;
+    /* box-shadow: 8px 8px #400944; */
+    font-size: 22px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: consola;
+    transition: 1s ease-in-out;
+}
+
+/* hover */
+.apres_link:hover {
+    /* background-color: #6a07eb ; */
+    /* width: 350px; */
+    text-align: center;
+    border-radius: 8px;
+    /* border: 4px solid #ff238a; */
+    box-shadow: 8px 8px #1e0e2bb0;
+    font-size: 22px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: consola;
+    /* "Markazi Text", serif; */
+    transition: 1s;
+    padding: 3%; 
+}
+/* #ff238a; rosa*/
+/* #A571EB; lilas */
+/* #0c0815; preto azulado */
+/* #6a07eb; roxo neon */
+/* #ff8bff; rosa bebe */
+/* #0c0815 */
+/* #400944 roxo */
+
+.imagem {
+    /* width: 150px; */
+    height: auto;
+    transition: 1s;
+}
+
+.imagem:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.video {
+    width: 380px;
+    /* height: 600px; */
+}
+
+.rodape {
+    background-color: #000000;
+    color: #f6f6f6;
+    border-top: 1px solid #753ca3;
+    padding: 16px; /*amplia a parte interna da borda */
+    text-align: center;
+    font-family: consola;
+    font-size: 16px;
+    transition: all 1s;
+}
+
+.rodape:hover {
+    color: #463d4e;
+}
+
+.link {
+    text-decoration: none;
+    color: #753ca3;
+}
